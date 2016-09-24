@@ -66,7 +66,6 @@ public class ImageObscurity {
 
 				img.setRGB(x, y, new Color(r & 0xFF, g & 0xFF, b & 0xFF, a).getRGB());
 			}
-			System.out.println("Completed column " + (x+1));
 		}
 
 		return img;
@@ -112,7 +111,6 @@ public class ImageObscurity {
 				if(alpha == 253)
 					out.write((byte) red);
 			}
-			System.out.println("Completed column " + (x+1));
 		}
 
 		return new Data(out.toByteArray());
